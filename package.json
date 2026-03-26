@@ -1,0 +1,55 @@
+{
+  "name": "@inboxical/cypress",
+  "version": "0.1.0",
+  "description": "Inboxical Cypress plugin — Email testing commands for Cypress",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./commands": {
+      "import": "./dist/commands.js",
+      "types": "./dist/commands.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "email",
+    "testing",
+    "cypress",
+    "qa",
+    "inbox",
+    "inboxical",
+    "e2e",
+    "otp"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ozers/inboxical-cypress.git"
+  },
+  "homepage": "https://inboxical.com",
+  "bugs": {
+    "url": "https://github.com/ozers/inboxical-cypress/issues"
+  },
+  "author": "Inboxical",
+  "license": "MIT",
+  "peerDependencies": {
+    "cypress": ">=12.0.0"
+  },
+  "dependencies": {
+    "@inboxical/sdk": "^0.1.0"
+  },
+  "devDependencies": {
+    "cypress": "^13.0.0",
+    "typescript": "^5.4.0"
+  }
+}

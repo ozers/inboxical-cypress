@@ -49,6 +49,7 @@
     "@inboxical/sdk": "^0.1.0"
   },
   "devDependencies": {
+    "@types/node": "^25.5.0",
     "cypress": "^13.0.0",
     "typescript": "^5.4.0"
   }
